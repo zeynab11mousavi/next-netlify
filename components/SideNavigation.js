@@ -7,7 +7,7 @@ const SideNavigation = () => {
     "Pistachio",
     "Mushroom",
     "Zucchini",
-    "Pepper",
+    "Bell Pepper",
     "Okra",
     "Tomato",
     "Green Beans",
@@ -21,12 +21,12 @@ const SideNavigation = () => {
     "Fig",
     "Banana",
     "Strawberry",
-    "saffron",
+    "Saffron",
     "Barberries",
     "Broccoli",
     "Pumpkin",
     "Onion",
-    "green onion"
+    "Green Onion"
   ];
   return (
     <div
