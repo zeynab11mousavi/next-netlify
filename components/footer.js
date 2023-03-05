@@ -51,7 +51,8 @@ const Footer = () => {
               </p>
               <p className="my-2 transition duration-300 ease-in-out hover:text-red-100">
                 <a href="tell:+982126217320">
-                  (+98 21) 26217320 ext: 124 or 125
+                  (+98 21) 26217320
+                  <br/> ext: 124 or 125
                 </a>
               </p>
               <p className="my-2 transition duration-300 ease-in-out hover:text-red-100">
