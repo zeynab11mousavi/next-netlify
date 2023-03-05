@@ -26,8 +26,7 @@ const SideNavigation = () => {
     "Broccoli",
     "Pumpkin",
     "Onion",
-    "green",
-    "onion",
+    "green onion"
   ];
   return (
     <div
