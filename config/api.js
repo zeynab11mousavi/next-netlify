@@ -1,7 +1,7 @@
 export const URL = 'https://ahtback-u095.onrender.com'
 export const api = 'https://ahtback-u095.onrender.com/';
 export const path = `https://ahtback-u095.onrender.com/files/`;
-export const site = 'https://enchanting-caramel-d29d18.netlify.app/';
+export const site = 'https://ahtfoods.netlify.app/';
 export const category = 'category';
 export const subcategory = 'subcategory';
 export const products = 'products';
