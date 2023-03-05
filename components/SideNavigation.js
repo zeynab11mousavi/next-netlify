@@ -33,7 +33,7 @@ const SideNavigation = () => {
       id="shortNavigation"
       className="shadow-sm text-[10px] md:text-base lg:w-[230px] sticky left-0 top-0 h-fit p-2 md:p-6 mx-auto"
     >
-      {subArr?.map((item, i = 1) => (
+      {subArr?.map((item, i = 2) => (
         <div
           key={i++}
           className="transition ease-in-out duration-300 hover:text-red-400 "
