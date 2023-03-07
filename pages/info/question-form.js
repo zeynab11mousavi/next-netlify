@@ -161,7 +161,7 @@ const QuestionForm = () => {
             <input
               value={name}
               onChange={(e) => setName(e.target.value)}
-              className=" w-[100%] h-8 rounded-md p-6"
+              className="  h-8 rounded-md p-6 border-2 border-stone-200 focus:border-gray-400"
               placeholder="Name"
               type="text"
               name="name"
@@ -173,7 +173,7 @@ const QuestionForm = () => {
             <input
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className=" w-[100%] h-8 rounded-md p-6"
+              className=" h-8 border-2 border-stone-200 focus:border-gray-400 rounded-md p-6"
               placeholder="Email"
               type="email"
               name="email"
@@ -185,7 +185,7 @@ const QuestionForm = () => {
             <input
               value={subject}
               onChange={(e) => setSubject(e.target.value)}
-              className=" w-[100%] h-8 rounded-md p-6"
+              className=" w-[100%] h-8 border-2 border-stone-200 focus:border-gray-400 rounded-md p-6"
               placeholder="Subject"
               type="text"
               name="subject"
@@ -197,7 +197,7 @@ const QuestionForm = () => {
             <textarea
               value={message}
               onChange={(e) => setMessage(e.target.value)}
-              className=" w-[100%] h-32 rounded-md p-6"
+              className=" w-[100%] h-32 border-2 border-stone-200 focus:border-gray-400 rounded-md p-6"
               placeholder="Message"
               type="text"
               name="message"
