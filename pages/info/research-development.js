@@ -70,7 +70,7 @@ const RandD = () => {
           {images?.map((slide, i = 0) => (
             <React.Fragment key={i++}>
               <SwiperSlide key={`${slide}`}>
-                <img className="w-9/12 mx-auto" src={`${slide}`} alt="slider" />
+                <Image className="w-9/12 mx-auto" src={`${slide}`} alt="slider" />
               </SwiperSlide>
             </React.Fragment>
           ))}
