@@ -6,9 +6,9 @@ import "react-toastify/dist/ReactToastify.css";
 import ReCAPTCHA from "react-google-recaptcha";
 import Head from "next/head";
 import { MdLocationPin, MdEmail } from "react-icons/md";
-import {BsTelephone} from "react-icons/bs"
-import {RiCustomerService2Fill} from "react-icons/ri"
-import {FaFax, FaWhatsapp } from "react-icons/fa"
+import { BsTelephone } from "react-icons/bs";
+import { RiCustomerService2Fill } from "react-icons/ri";
+import { FaFax, FaWhatsapp } from "react-icons/fa";
 
 const QuestionForm = () => {
   const [name, setName] = useState();
@@ -150,9 +150,13 @@ const QuestionForm = () => {
         action="mailto:zb.mv01@gmail.com"
         method="post"
         enctype="text/plain"
-        className="bg-gradient-to-r from-red-300 to-red-100 rounded-md w-full md:w-8/12 py-16 bg-red-50 mx-auto flex justify-center items-center md:mt-36"
+        className=" rounded-md w-full md:w-8/12 py-16 mx-auto flex justify-center items-center md:mt-36"
       >
         <div className="w-8/12 ">
+          <p className="text-gray-700 md:text-lg">
+            Please fill out the quick form and we will be in touch with
+            lightning speed.
+          </p>
           <div className="my-4">
             <input
               value={name}
@@ -207,7 +211,7 @@ const QuestionForm = () => {
           />
 
           <input
-            className="w-[50%] bg-gradient-to-l from-gray-200 to-white p-4 rounded-md mx-auto transition my-4 duration-300 ease-in-out  text-gray-600 hover:text-gray-800"
+            className="w-[50%] bg-red-50 p-4 rounded-md mx-auto transition my-4 duration-300 ease-in-out  text-gray-600 hover:text-gray-800"
             type="submit"
             value="Send"
           />
