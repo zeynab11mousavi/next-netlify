@@ -14,6 +14,8 @@ import YouMayLike from "@/components/YouMayLike";
 import { MdArrowDropDown } from "react-icons/md";
 import Link from "next/link";
 import Head from "next/head";
+import noImage from "../../assets/noImage.jpg";
+
 
 const Details = () => {
   const [product, setProduct] = useState([]);
@@ -67,9 +69,8 @@ const Details = () => {
                   </Swiper>
                 ) : (
                   <div
-                  key={i++} 
                   className="text-center py-8 w-full h-full b">
-                    No picture available
+                    <img src={noImage}/>
                   </div>
                 )}
               </div>
@@ -188,7 +189,7 @@ const Details = () => {
                 </Swiper>
               ) : (
                 <div className="text-center py-8 w-full h-full b">
-                  No picture available
+                  <img src={noImage}/>
                 </div>
               )}
             </div>
