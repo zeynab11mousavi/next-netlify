@@ -5,6 +5,10 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import ReCAPTCHA from "react-google-recaptcha";
 import Head from "next/head";
+import { MdLocationPin, MdEmail } from "react-icons/md";
+import {BsTelephone} from "react-icons/bs"
+import {RiCustomerService2Fill} from "react-icons/ri"
+import {FaFax, FaWhatsapp } from "react-icons/fa"
 
 const QuestionForm = () => {
   const [name, setName] = useState();
