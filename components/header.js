@@ -326,8 +326,8 @@ const Header = () => {
                 className={productMobileView}>
                 R & D
               </a>
-              <a href={`/info/FQA`} className={productMobileView}>
-                FQA
+              <a href={`/info/FAQ`} className={productMobileView}>
+                FAQ
               </a>
               <a href={`/info/question-form`} className={productMobileView}>
                 Contact Us
@@ -560,8 +560,8 @@ const Header = () => {
                   href={`/info/research-development`}>
                   R & D
                 </Link>
-                <Link className={productStyle} href={`/info/FQA`}>
-                  FQA
+                <Link className={productStyle} href={`/info/FAQ`}>
+                  FAQ
                 </Link>
                 <Link className={productStyle} href={`/info/question-form`}>
                   Contact Us

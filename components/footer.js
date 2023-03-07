@@ -78,7 +78,7 @@ const Footer = () => {
                 <a href={`/info/custom-packing`}>Custom Packing</a>
               </p>
               <p className="my-2 transition duration-300 ease-in-out hover:text-red-100">
-                <a href={`/info/FQA`}>FQA</a>
+                <a href={`/info/FAQ`}>FAQ</a>
               </p>
               <p className="my-2 transition duration-300 ease-in-out hover:text-red-100">
                 <a href={`/info/about-us`}>About Us</a>
