@@ -235,8 +235,7 @@ const Header = () => {
                   alt={"K-STAR"}
                   className={achievementLogosMobileView}
                 />
-                Korea Superconducting Tokamak Advanced Research Food Safety
-                System Certification
+                K-STAR
               </Link>
               <Link href="#" className={achievementMobileView}>
                 <Image
@@ -487,7 +486,7 @@ const Header = () => {
                     alt={"K-STAR"}
                     className={achievementLogos}
                   />
-                  Korea Superconducting Tokamak Advanced Research
+                  K-STAR
                 </Link>
                 <Link href="#" className={achievementStyle}>
                   <Image src={FSSC} alt={"FSSC"} className={achievementLogos} />
@@ -577,6 +576,7 @@ const Header = () => {
               <BiSearchAlt2 onClick={() => handleSearch()} />
             </div>
             <input
+            id="header-search-input"
               value={search}
               onChange={(e) => setSearch(e.target.value)}
               className={searchInputDesk}

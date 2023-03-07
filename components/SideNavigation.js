@@ -3,30 +3,29 @@ import Link from "next/link";
 
 const SideNavigation = () => {
   const subArr = [
-    "Subcategories:",
-    "Pistachio",
-    "Mushroom",
-    "Zucchini",
-    "Bell Pepper",
-    "Okra",
-    "Tomato",
-    "Green Beans",
-    "Orange",
-    "Apple",
-    "Kiwi",
-    "Peach",
-    "Apricot",
-    "Date",
-    "Raisin",
-    "Fig",
-    "Banana",
-    "Strawberry",
-    "Saffron",
-    "Barberries",
-    "Broccoli",
-    "Pumpkin",
-    "Onion",
-    "Green Onion"
+    ["Apple", 9],
+    ["Apricot", 12],
+    ["Banana", 16],
+    ["Barberries", 19],
+    ["Bell Pepper", 4],
+    ["Broccoli", 20],
+    ["Date", 13],
+    ["Fig", 15],
+    ["Green Beans", 7],
+    ["Green Onion", 22],
+    ["Kiwi", 10],
+    ["Mushroom", 2],
+    ["Okra", 5],
+    ["Onion", 21],
+    ["Orange", 8],
+    ["Peach", 11],
+    ["Pistachio", 1],
+    ["Pumpkin", 21],
+    ["Raisin", 14],
+    ["Saffron", 18],
+    ["Strawberry", 17],
+    ["Tomato", 6],
+    ["Zucchini", 3],
   ];
   return (
     <div
@@ -38,9 +37,7 @@ const SideNavigation = () => {
           key={++i}
           className="transition ease-in-out duration-300 hover:text-red-400 "
         >
-          <Link href={`${site}products/${subcategory}/${i}`}>
-            {item}
-          </Link>
+          <Link href={`${site}products/${subcategory}/${item[1]}`}>{item[0]}</Link>
         </div>
       ))}
     </div>
@@ -48,3 +45,5 @@ const SideNavigation = () => {
 };
 
 export default SideNavigation;
+
+
