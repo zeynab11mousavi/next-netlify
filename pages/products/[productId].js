@@ -70,7 +70,7 @@ const Details = () => {
                 ) : (
                   <div
                   className="text-center py-8 w-full h-full b">
-                    <img src={noImage}/>
+                    <Image src={noImage}/>
                   </div>
                 )}
               </div>
@@ -189,7 +189,7 @@ const Details = () => {
                 </Swiper>
               ) : (
                 <div className="text-center py-8 w-full h-full b">
-                  <img src={noImage}/>
+                  <Image src={noImage}/>
                 </div>
               )}
             </div>
