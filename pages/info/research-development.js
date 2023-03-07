@@ -4,6 +4,8 @@ import three from "../../assets/RandD/three.jpg";
 import four from "../../assets/RandD/four.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper";
+import Image from "next/image";
+
 // import Swiper and modules styles
 import "swiper/css";
 import "swiper/css/navigation";
@@ -70,7 +72,7 @@ const RandD = () => {
           {images?.map((slide, i = 0) => (
             <React.Fragment key={i++}>
               <SwiperSlide key={`${slide}`}>
-                <Image className="w-9/12 mx-auto" src={`${slide}`} alt="slider" />
+                <Image  className="w-9/12 mx-auto" src={`${slide}`} alt="slider" />
               </SwiperSlide>
             </React.Fragment>
           ))}
