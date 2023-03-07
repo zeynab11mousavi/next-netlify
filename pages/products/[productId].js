@@ -15,6 +15,7 @@ import { MdArrowDropDown } from "react-icons/md";
 import Link from "next/link";
 import Head from "next/head";
 import noImage from "../../assets/noImage.jpg";
+import Image from "next/image"
 
 
 const Details = () => {
@@ -70,7 +71,7 @@ const Details = () => {
                 ) : (
                   <div
                   className="text-center py-8 w-full h-full b">
-                    <Image src={noImage} alt="no image is available for this product"/>
+                    <Image src={noImage} alt="no image is"/>
                   </div>
                 )}
               </div>
@@ -189,7 +190,7 @@ const Details = () => {
                 </Swiper>
               ) : (
                 <div className="text-center py-8 w-full h-full b">
-                  <Image src={noImage} alt="no image is available for this product"/>
+                  <Image src={noImage}/>
                 </div>
               )}
             </div>
