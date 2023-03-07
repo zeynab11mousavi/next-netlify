@@ -17,7 +17,7 @@ const CustomPacking = () => {
         <title>AHT | Custom packing</title>
       </Head>
       {/* SWIPER */}
-      <div className="w-8/12 mx-auto my-8">
+      <div className="w-full md:w-8/12 mx-auto my-8">
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
           slidesPerView={1}
@@ -32,7 +32,7 @@ const CustomPacking = () => {
                 <Image
                   width={1000}
                   height={700}
-                  className="w-9/12 mx-auto"
+                  className="w-full md:w-9/12 mx-auto"
                   src={slide}
                   alt="slider"
                 />
