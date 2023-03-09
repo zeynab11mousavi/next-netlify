@@ -10,6 +10,7 @@ import desktopSlider from "../assets/desktopSlider/index";
 import phoneSlider from "../assets/phoneSlider/index";
 import Card from "@/components/card";
 import YouMayLike from "@/components/YouMayLike";
+
 // const inter = Inter({ subsets: ["latin"] });
 
 //------------------------------------------------------ GET STATIC PROPS ----------------------------------------------------------------
@@ -56,10 +57,9 @@ const Home = ({ popular, news, events }) => {
           modules={[Navigation, Pagination, Autoplay]}
           slidesPerView={1}
           navigation
-          autoplay={true}
+          autoplay={{ delay: 8500, disableOnInteraction: false }}
           pagination={{ clickable: true }}
-          style={{ margin: "0 0 2rem 0" }}
-        >
+          style={{ margin: "0 0 2rem 0" }}>
           {deskSlid?.map((slide, index = 0) => (
             <SwiperSlide key={`${index++}`}>
               <div className="mt-16 md:mt-2" key={index++}>
@@ -89,8 +89,7 @@ const Home = ({ popular, news, events }) => {
 
       <div
         id="newsEventsWrapper"
-        className="w-full lg:p-8 block md:flex justify-around"
-      >
+        className="w-full lg:p-8 block md:flex justify-around">
         {/* NEWSLETTERS */}
         <div className=" w-full md:w-8/12 mx-auto md:mx-[0]">
           <div className="text-3xl md:text-[38px] text-[#7D2F2F] mb-4 ml-4">
@@ -99,13 +98,11 @@ const Home = ({ popular, news, events }) => {
           </div>
           <div
             id="news"
-            className="w-full grid grid-cols-1 md:grid-cols-3 gap-1.5 md: gap-6"
-          >
+            className="w-full grid grid-cols-1 md:grid-cols-3 gap-1.5 md: gap-6">
             {news?.map((i, index = 0) => (
               <div
                 key={index++}
-                className="shadow-sm p-4 border border-gray-50 w-[310px] h-[300px] mx-auto "
-              >
+                className="shadow-sm p-4 border border-gray-50 w-[310px] h-[300px] mx-auto ">
                 <img
                   className="h-[200px] mx-auto hover:blur-[1px] "
                   src={`${path}${i.image}`}
@@ -119,8 +116,7 @@ const Home = ({ popular, news, events }) => {
                   </p>
                   <a
                     href={`${site}event-news/${i.title}`}
-                    className="text-xs md:text-sm text-[#A54646]"
-                  >
+                    className="text-xs md:text-sm text-[#A54646]">
                     click here to read the article
                   </a>
                 </div>
@@ -139,8 +135,7 @@ const Home = ({ popular, news, events }) => {
             {events?.map((i, index = 0) => (
               <div
                 key={index++}
-                className="flex w-11/12 md:w-full h-[150px] border-b shadow-sm items-center px-2 py-4 m-4 md:m-0"
-              >
+                className="flex w-11/12 md:w-full h-[150px] border-b shadow-sm items-center px-2 py-4 m-4 md:m-0">
                 <div className="  bg-[#7D2F2F] text-white w-16 h-16 text-center pt-2 m-2 rounded-lg">
                   {i.date}
                 </div>
@@ -150,8 +145,7 @@ const Home = ({ popular, news, events }) => {
                   </p>
                   <p
                     href="#"
-                    className="text-sm md:text-base h-16  text-[#A54646]"
-                  >
+                    className="text-sm md:text-base h-16  text-[#A54646]">
                     {i.subTitle}
                   </p>
                 </div>
