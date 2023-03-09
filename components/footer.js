@@ -14,7 +14,7 @@ const Footer = () => {
 
   }, [])
   return (
-    <footer className=" bg-gradient-to-t from-[#7F0019] to-[#8A0019] text-white px-10 md:px-16 pt-8 md:px-32">
+    <footer className=" bg-gradient-to-t from-[#7C8F34] to-[#8DA72B] text-white px-10 md:px-16 pt-8 md:px-32">
       <div id="socialMedia" className="mb-8">
         <p className=" md:lg lg:text-xl my-2 "> JOIN AND CONTACT US</p>
         <div
