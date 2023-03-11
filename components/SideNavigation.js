@@ -16,7 +16,7 @@ const SideNavigation = () => {
     ["Kiwi", 10],
     ["Mushroom", 2],
     ["Okra", 5],
-    ["Onion", 21],
+    ["Onion", 22],
     ["Orange", 8],
     ["Peach", 11],
     ["Pistachio", 1],
