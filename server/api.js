@@ -1,6 +1,6 @@
 export const URL = "https://ahtback-u095.onrender.com";
 export const api = "https://ahtback-u095.onrender.com/";
-export const site = `https://${window.location.hostname}/`;
+export const site = `http://testaht.ir//`;
 export const path = `https://ahtback-u095.onrender.com/files/`;
 export const category = "category";
 export const subcategory = "subcategory";
