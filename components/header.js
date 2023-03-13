@@ -56,7 +56,7 @@ const Header = () => {
   const [menuToggle, setMenuToggle] = useState(false);
   const [product, setProduct] = useState(false);
   const [achievement, setAchievement] = useState(false);
-  const [about, setAbout] = useState(false);
+  const [aboutState, setAbout] = useState(false);
   const [bulk, setBulk] = useState(false);
   const [brand, setBrand] = useState(false);
   const [newsState, setNews] = useState(false);
@@ -297,39 +297,43 @@ const Header = () => {
           )}
 
           <div className={navItemListPhoneView}>
-            <div onClick={() => setAbout(!about)} className={navItemPhoneView}>
+            <div onClick={() => setAbout(!aboutState)} className={navItemPhoneView}>
               ABOUT US
             </div>
           </div>
 
           {/* ABOUT TOGGLE  */}
-          {about && (
+          {aboutState && (
             <div className="shadow-inner">
-              <a href={`/info/about-us`} className={productMobileView}>
+              <a href={`/about`} className={productMobileView}>
                 ABOUT US
               </a>
 
-              <a href={`/info/factories`} className={productMobileView}>
+              <a href={`/e-catalogue`} className={productMobileView}>
+                CATALOGUE
+              </a>
+
+              <a href={`/factory`} className={productMobileView}>
                 FACTORIES
               </a>
 
               <a
-                href={`/info/quality-food-safety`}
+                href={`/quality-food-safety`}
                 className={productMobileView}>
                 QUALITY AND FOOD SAFETY
               </a>
-              <a href={`/info/custom-packing`} className={productMobileView}>
+              <a href={`/custom-packing`} className={productMobileView}>
                 CUSTOM PACKING
               </a>
               <a
-                href={`/info/research-development`}
+                href={`/research-development`}
                 className={productMobileView}>
                 R & D
               </a>
-              <a href={`/info/FAQ`} className={productMobileView}>
+              <a href={`/FAQ`} className={productMobileView}>
                 FAQ
               </a>
-              <a href={`/info/question-form`} className={productMobileView}>
+              <a href={`/contact`} className={productMobileView}>
                 Contact Us
               </a>
             </div>
@@ -539,31 +543,35 @@ const Header = () => {
                 ABOUT US <span > <MdArrowDropDown/> </span>
               </div>
               <div className={navItemListSubList}>
-                <Link className={productStyle} href={`/info/about-us`}>
+                <Link className={productStyle} href={`/about`}>
                   ABOUT US
                 </Link>
 
-                <Link className={productStyle} href={`/info/factories`}>
+                <Link className={productStyle} href={`/e-catalogue`}>
+                  CATALOGUE
+                </Link>
+
+                <Link className={productStyle} href={`/factory`}>
                   FACTORIES
                 </Link>
 
                 <Link
                   className={productStyle}
-                  href={`/info/quality-food-safety`}>
+                  href={`/quality-food-safety`}>
                   QUALITY AND FOOD SAFETY
                 </Link>
-                <Link className={productStyle} href={`/info/custom-packing`}>
+                <Link className={productStyle} href={`/custom-packing`}>
                   CUSTOM PACKING
                 </Link>
                 <Link
                   className={productStyle}
-                  href={`/info/research-development`}>
+                  href={`/research-development`}>
                   R & D
                 </Link>
-                <Link className={productStyle} href={`/info/FAQ`}>
+                <Link className={productStyle} href={`/FAQ`}>
                   FAQ
                 </Link>
-                <Link className={productStyle} href={`/info/question-form`}>
+                <Link className={productStyle} href={`/contact`}>
                   Contact Us
                 </Link>
               </div>
