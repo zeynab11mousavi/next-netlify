@@ -205,10 +205,17 @@ textarea {
   width: 420px;
   /* border: #fff solid 2px; */
   border-radius: 4px;
-  height: 420px;
-  transform: scale(1.5);
+  height: 720px;
+  transform: scale(2);
   transform-origin: 0% 0% 0px;
+}
 
+@media only screen and (max-width: 600px) {
+  .catalogueContainer {
+    transform: scale(0.7);
+  transform-origin: 0% 0% 0px;
+  height: 300px;
+  }
 }
 
 .catalogueTitle {
@@ -216,8 +223,8 @@ textarea {
   top: 45px;
   left: 0;
   width: 100%;
-  font-size: 2em;
   font-weight: normal;
+  text-align: center;
   line-height: 1;
 }
 
