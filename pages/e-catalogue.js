@@ -4,7 +4,7 @@ const Catalogue = () => {
       <div className="catalogueImgLoader"></div>
 
       <div className="catalogueContainer">
-        <h1 className="catalogueTitle">AHT CATALOGUE</h1>
+        <h1 className="catalogueTitle text-gray-600">AHT FOOD'S CATALOGUE</h1>
 
         <div className="catalogueBook">
           <div className="catalogueBook-gap"></div>
@@ -33,6 +33,7 @@ const Catalogue = () => {
           </div>
         </div>
       </div>
+      <div className="md:mb-[20%]"></div>
     </div>
   );
 };
