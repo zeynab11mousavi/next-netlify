@@ -164,7 +164,7 @@ body {
   padding: 4em 0;
 }
 
-.imgLoader {
+.catalogueImgLoader {
   position: fixed;
   -webkit-animation: preLoad 1s steps(1);
           animation: preLoad 1s steps(1);
@@ -212,7 +212,7 @@ body {
   }
 }
 
-.container {
+.catalogueContainer {
   position: relative;
   width: 420px;
   /* border: #fff solid 2px; */
@@ -223,7 +223,7 @@ body {
 
 }
 
-.title {
+.catalogueTitle {
   position: absolute;
   top: 45px;
   left: 0;
@@ -241,7 +241,7 @@ body {
   text-align: left;
 }
 
-.book {
+.catalogueBook {
   position: relative;
   perspective: 730px;
   perspective-origin: center 10px;
@@ -249,7 +249,7 @@ body {
   filter: drop-shadow(0px 10px 5px rgba(0, 0, 0, 0.25));
 }
 
-.page {
+.catalogueBook-cataloguePages-page {
   width: 210px;
   height: 300px;
   background-color: #bbb;
@@ -262,30 +262,30 @@ body {
   background-position: center;
   transform-style: preserve-3d;
 }
-.page:nth-child(1) {
+.catalogueBook-cataloguePages-page:nth-child(1) {
   transform: rotateX(60deg) rotateY(3deg);
 }
-.page:nth-child(2) {
+.catalogueBook-cataloguePages-page:nth-child(2) {
   transform: rotateX(60deg) rotateY(4.5deg);
 }
-.page:nth-child(3) {
+.catalogueBook-cataloguePages-page:nth-child(3) {
   transform: rotateX(60deg) rotateY(6deg);
   -webkit-animation: nextPage 25s infinite -24s steps(1);
           animation: nextPage 25s infinite -24s steps(1);
   background-size: 420px 300px;
   background-position: -2px -2px;
 }
-.page:nth-child(4) {
+.catalogueBook-cataloguePages-page:nth-child(4) {
   transform: rotateX(60deg) rotateY(177deg);
 }
-.page:nth-child(5) {
+.catalogueBook-cataloguePages-page:nth-child(5) {
   transform: rotateX(60deg) rotateY(175.5deg);
 }
-.page:nth-child(6) {
+.catalogueBook-cataloguePages-page:nth-child(6) {
   transform: rotateX(60deg) rotateY(174deg);
   overflow: hidden;
 }
-.page:nth-child(6)::after {
+.catalogueBook-cataloguePages-page:nth-child(6)::after {
   content: "";
   width: 210px;
   height: 300px;
@@ -334,7 +334,7 @@ body {
   }
 }
 
-.gap {
+.catalogueBook-gap {
   width: 10px;
   height: 300px;
   background: none;
@@ -344,7 +344,7 @@ body {
   top: 0px;
   left: calc(50% - 5px);
 }
-.gap::after {
+.catalogueBook-gap::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -356,11 +356,11 @@ body {
   border-radius: 50%;
 }
 
-.pages, .flips {
+.catalogueBook-cataloguePages, .catalogueFlips {
   transform-style: preserve-3d;
 }
 
-.flip {
+.catalogueFlip {
   width: 32px;
   height: 300px;
   position: absolute;
@@ -374,7 +374,7 @@ body {
   transform-style: preserve-3d;
   background-size: 420px 300px;
 }
-.flip::after {
+.catalogueFlip::after {
   content: "";
   position: absolute;
   top: 0px;
@@ -384,56 +384,56 @@ body {
   transform-origin: center;
   background-size: 420px 300px;
 }
-.flip.flip1 {
+.catalogueFlip.catalogueFlip1 {
   right: 50%;
-  -webkit-animation: flip1 5s infinite ease-in-out;
-          animation: flip1 5s infinite ease-in-out;
+  -webkit-animation: catalogueFlip1 5s infinite ease-in-out;
+          animation: catalogueFlip1 5s infinite ease-in-out;
   border-width: 2px 2px 2px 0;
 }
-.flip.flip1::after {
+.catalogueFlip.catalogueFlip1::after {
   -webkit-animation: nextFlip1 25s -20s infinite steps(1);
           animation: nextFlip1 25s -20s infinite steps(1);
 }
-.flip:not(.flip1) {
+.catalogueFlip:not(.catalogueFlip1) {
   right: calc(100% - 2px);
   top: -2px;
   transform-origin: right;
-  -webkit-animation: flip2 5s ease-in-out infinite;
-          animation: flip2 5s ease-in-out infinite;
+  -webkit-animation: catalogueFlip2 5s ease-in-out infinite;
+          animation: catalogueFlip2 5s ease-in-out infinite;
 }
-.flip.flip2::after {
+.catalogueFlip.catalogueFlip2::after {
   -webkit-animation: nextFlip2 25s -20s infinite steps(1);
           animation: nextFlip2 25s -20s infinite steps(1);
 }
-.flip.flip3::after {
+.catalogueFlip.catalogueFlip3::after {
   -webkit-animation: nextFlip3 25s -20s infinite steps(1);
           animation: nextFlip3 25s -20s infinite steps(1);
 }
-.flip.flip4::after {
+.catalogueFlip.catalogueFlip4::after {
   -webkit-animation: nextFlip4 25s -20s infinite steps(1);
           animation: nextFlip4 25s -20s infinite steps(1);
 }
-.flip.flip5::after {
+.catalogueFlip.catalogueFlip5::after {
   -webkit-animation: nextFlip5 25s -20s infinite steps(1);
           animation: nextFlip5 25s -20s infinite steps(1);
 }
-.flip.flip6::after {
+.catalogueFlip.catalogueFlip6::after {
   -webkit-animation: nextFlip6 25s -20s infinite steps(1);
           animation: nextFlip6 25s -20s infinite steps(1);
 }
-.flip.flip7::after {
+.catalogueFlip.catalogueFlip7::after {
   -webkit-animation: nextFlip7 25s -20s infinite steps(1);
           animation: nextFlip7 25s -20s infinite steps(1);
 }
-.flip.flip7 {
+.catalogueFlip.catalogueFlip7 {
   width: 30px;
   border-width: 2px 0px 2px 2px;
 }
-.flip.flip7::after {
+.catalogueFlip.catalogueFlip7::after {
   -webkit-animation: nextFlip7 25s -20s infinite steps(1);
           animation: nextFlip7 25s -20s infinite steps(1);
 }
-@-webkit-keyframes flip1 {
+@-webkit-keyframes catalogueFlip1 {
   0%, 20% {
     transform: rotateX(60deg) rotateY(6deg);
   }
@@ -441,7 +441,7 @@ body {
     transform: rotateX(60deg) rotateY(174deg);
   }
 }
-@keyframes flip1 {
+@keyframes catalogueFlip1 {
   0%, 20% {
     transform: rotateX(60deg) rotateY(6deg);
   }
@@ -449,7 +449,7 @@ body {
     transform: rotateX(60deg) rotateY(174deg);
   }
 }
-@-webkit-keyframes flip2 {
+@-webkit-keyframes catalogueFlip2 {
   0%, 20% {
     transform: rotateY(0deg) translateY(0px);
   }
@@ -457,7 +457,7 @@ body {
     transform: rotateY(-15deg) translateY(0px);
   }
 }
-@keyframes flip2 {
+@keyframes catalogueFlip2 {
   0%, 20% {
     transform: rotateY(0deg) translateY(0px);
   }

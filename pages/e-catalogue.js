@@ -1,34 +1,29 @@
 const Catalogue = () => {
-    return ( 
+  return (
+    <>
+      <div class="catalogueImgLoader"></div>
 
-        <>
-        <div class="imgLoader"></div>
+      <div class="catalogueContainer">
+        <h1 class="catalogueTitle">AHT CATALOGUE</h1>
 
-        <div class="container">
-        
-          <h1 class="title">
-            AHT CATALOGUE
-          </h1>
-        
-          <div class="book">
-            <div class="gap"></div>
-            <div class="pages">
-              <div class="page"></div>
-              <div class="page"></div>
-              <div class="page"></div>
-              <div class="page"></div>
-              <div class="page"></div>
-              <div class="page"></div>
-            </div>
-            <div class="flips">
-              <div class="flip flip1">
-                <div class="flip flip2">
-                  <div class="flip flip3">
-                    <div class="flip flip4">
-                      <div class="flip flip5">
-                        <div class="flip flip6">
-                          <div class="flip flip7"></div>
-                        </div>
+        <div class="catalogueBook">
+          <div class="catalogueBook-gap"></div>
+          <div class="catalogueBook-cataloguePages">
+            <div class="catalogueBook-cataloguePages-page"></div>
+            <div class="catalogueBook-cataloguePages-page"></div>
+            <div class="catalogueBook-cataloguePages-page"></div>
+            <div class="catalogueBook-cataloguePages-page"></div>
+            <div class="catalogueBook-cataloguePages-page"></div>
+            <div class="catalogueBook-cataloguePages-page"></div>
+          </div>
+          <div class="catalogueFlips">
+            <div class="catalogueFlip catalogueFlip1">
+              <div class="catalogueFlip catalogueFlip2">
+                <div class="catalogueFlip catalogueFlip3">
+                  <div class="catalogueFlip catalogueFlip4">
+                    <div class="catalogueFlip catalogueFlip5">
+                      <div class="catalogueFlip catalogueFlip6">
+                        <div class="catalogueFlip catalogueFlip7"></div>
                       </div>
                     </div>
                   </div>
@@ -37,8 +32,9 @@ const Catalogue = () => {
             </div>
           </div>
         </div>
-    </>    
-     );
-}
- 
+      </div>
+    </>
+  );
+};
+
 export default Catalogue;
