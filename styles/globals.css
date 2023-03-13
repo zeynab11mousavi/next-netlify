@@ -150,19 +150,7 @@ textarea {
 
 /* CATALOGUE */
 
-@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
-* {
-  padding: 0;
-  margin: 0 auto;
-  box-sizing: border-box;
-}
 
-body {
-  background-color: #eee;
-  color: #555;
-  text-align: center;
-  padding: 4em 0;
-}
 
 .catalogueImgLoader {
   position: fixed;
