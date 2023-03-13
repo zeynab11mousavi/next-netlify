@@ -96,28 +96,28 @@ const Header = () => {
           {product && (
             <div className=" shadow-inner">
               <Link
-                href={`${site}${products}/category/1&type=retail`}
+                href={`/${products}/category/1&type=retail`}
                 className={productMobileView}>
                 SUN-DRIED <MdOutlineArrowRight />
               </Link>
 
               <Link
-                href={`${site}${products}/category/2&type=retail`}
+                href={`/${products}/category/2&type=retail`}
                 className={productMobileView}>
                 AIR-DRIED <MdOutlineArrowRight />
               </Link>
               <Link
-                href={`${site}${products}/category/3&type=retail`}
+                href={`/${products}/category/3&type=retail`}
                 className={productMobileView}>
                 FREEZE-DRIED <MdOutlineArrowRight />
               </Link>
               <Link
-                href={`${site}${products}/category/5&type=retail`}
+                href={`/${products}/category/5&type=retail`}
                 className={productMobileView}>
                 NUTS <MdOutlineArrowRight />
               </Link>
               <Link
-                href={`${site}${products}/category/6&type=retail`}
+                href={`/${products}/category/6&type=retail`}
                 className={productMobileView}>
                 SAFFRON <MdOutlineArrowRight />
               </Link>
@@ -134,28 +134,28 @@ const Header = () => {
           {bulk && (
             <div className="shadow-inner">
               <Link
-                href={`${site}${products}/category/1&type=bulk`}
+                href={`/${products}/category/1&type=bulk`}
                 className={productMobileView}>
                 SUN-DRIED <MdOutlineArrowRight />
               </Link>
 
               <Link
-                href={`${site}${products}/category/2&type=bulk`}
+                href={`/${products}/category/2&type=bulk`}
                 className={productMobileView}>
                 AIR-DRIED <MdOutlineArrowRight />
               </Link>
               <Link
-                href={`${site}${products}/category/3&type=bulk`}
+                href={`/${products}/category/3&type=bulk`}
                 className={productMobileView}>
                 FREEZE-DRIED <MdOutlineArrowRight />
               </Link>
               <Link
-                href={`${site}${products}/category/5&type=bulk`}
+                href={`/${products}/category/5&type=bulk`}
                 className={productMobileView}>
                 NUTS <MdOutlineArrowRight />
               </Link>
               <Link
-                href={`${site}${products}/category/6&type=bulk`}
+                href={`/${products}/category/6&type=bulk`}
                 className={productMobileView}>
                 SAFFRON <MdOutlineArrowRight />
               </Link>
@@ -286,11 +286,11 @@ const Header = () => {
           {/* EVENTS AND NEWS TOGGLE  */}
           {newsState && (
             <div className="shadow-inner">
-              <Link href={`${site}event-news`} className={eventsNew}>
+              <Link href={`/event-news`} className={eventsNew}>
                 Events
               </Link>
 
-              <Link href={`${site}event-news`} className={eventsNew}>
+              <Link href={`/event-news`} className={eventsNew}>
                 News
               </Link>
             </div>
@@ -355,27 +355,27 @@ const Header = () => {
               </div>
               <div className={navItemListSubList}>
                 <Link
-                  href={`${site}${products}/category/1&type=bulk`}
+                  href={`/${products}/category/1&type=bulk`}
                   className={productStyle}>
                   SUN-DRIED <MdOutlineArrowRight />
                 </Link>
                 <Link
-                  href={`${site}${products}/category/2&type=bulk`}
+                  href={`/${products}/category/2&type=bulk`}
                   className={productStyle}>
                   AIR-DRIED <MdOutlineArrowRight />
                 </Link>
                 <Link
-                  href={`${site}${products}/category/3&type=bulk`}
+                  href={`/${products}/category/3&type=bulk`}
                   className={productStyle}>
                   FREEZE-DRIED <MdOutlineArrowRight />
                 </Link>
                 <Link
-                  href={`${site}${products}/category/5&type=bulk`}
+                  href={`/${products}/category/5&type=bulk`}
                   className={productStyle}>
                   NUTS <MdOutlineArrowRight />
                 </Link>
                 <Link
-                  href={`${site}${products}/category/6&type=bulk`}
+                  href={`/${products}/category/6&type=bulk`}
                   className={productStyle}>
                   SAFFRON <MdOutlineArrowRight />
                 </Link>
@@ -392,27 +392,27 @@ const Header = () => {
               </div>
               <div className={navItemListSubList}>
                 <Link
-                  href={`${site}${products}/category/1&type=retail`}
+                  href={`/${products}/category/1&type=retail`}
                   className={productStyle}>
                   SUN-DRIED <MdOutlineArrowRight />
                 </Link>
                 <Link
-                  href={`${site}${products}/category/2&type=retail`}
+                  href={`/${products}/category/2&type=retail`}
                   className={productStyle}>
                   AIR-DRIED <MdOutlineArrowRight />
                 </Link>
                 <Link
-                  href={`${site}${products}/category/3&type=retail`}
+                  href={`/${products}/category/3&type=retail`}
                   className={productStyle}>
                   FREEZE-DRIED <MdOutlineArrowRight />
                 </Link>
                 <Link
-                  href={`${site}${products}/category/5&type=retail`}
+                  href={`/${products}/category/5&type=retail`}
                   className={productStyle}>
                   NUTS <MdOutlineArrowRight />
                 </Link>
                 <Link
-                  href={`${site}${products}/category/6&type=retail`}
+                  href={`/${products}/category/6&type=retail`}
                   className={productStyle}>
                   SAFFRON <MdOutlineArrowRight />
                 </Link>
@@ -524,11 +524,11 @@ const Header = () => {
                 EVENTS & NEWS <span > <MdArrowDropDown/> </span>
               </div>
               <div className={brandsEventSubList}>
-                <Link href={`${site}event-news`} className={productStyle}>
+                <Link href={`/event-news`} className={productStyle}>
                   Events
                 </Link>
 
-                <Link href={`${site}event-news`} className={productStyle}>
+                <Link href={`/event-news`} className={productStyle}>
                   News
                 </Link>
               </div>

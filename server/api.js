@@ -1,7 +1,7 @@
-export const URL = "https://ahtback-u095.onrender.com";
-export const api = "https://ahtback-u095.onrender.com/";
+export const URL = "https://aht-back.chbk.run";
+export const api = "https://aht-back.chbk.run/";
 export const site = `http://testaht.ir/`;
-export const path = `https://ahtback-u095.onrender.com/files/`;
+export const path = `https://aht-back.chbk.run/files/`;
 export const category = "category";
 export const subcategory = "subcategory";
 export const products = "products";
