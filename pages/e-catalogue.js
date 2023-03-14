@@ -1,6 +1,7 @@
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper";
 import catalogue from "@/assets/catalogue";
@@ -22,10 +23,12 @@ const Catalogue = () => {
           <SwiperSlide key={`${index++}`}>
             <div className="w-10/12 mx-auto">
 
-            <img
+            <Image
               className="w-full"
               src={slide}
               alt="aht catalogue"
+              width={1200}
+              height={800}
             />
             </div>
 
