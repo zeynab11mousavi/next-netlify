@@ -34,14 +34,14 @@ const SideNavigation = () => {
       className="shadow-sm text-[10px] md:text-base lg:w-[230px] sticky left-0 top-0 h-fit p-2 md:p-6 mx-auto"
     >
       <div
-        className="transition ease-in-out duration-300 text-[#8A0019] hover:text-gray-700"
+        className="transition text-xs md:text-small ease-in-out duration-300 text-[#8A0019] hover:text-gray-700"
       >
         Products (in alphabetical order):
       </div>
       {subArr?.map((item, i = 0) => (
         <div
           key={++i}
-          className="transition ease-in-out duration-300 text-[#8A0019] hover:text-gray-700"
+          className="transition text-xs md:text-small ease-in-out duration-300 text-[#8A0019] hover:text-gray-700"
         >
           <Link href={`${site}products/${subcategory}/${item[1]}`}>
             {item[0]}
