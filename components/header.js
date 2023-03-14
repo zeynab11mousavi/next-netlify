@@ -12,7 +12,7 @@ import { TiThMenu } from "react-icons/ti";
 import { IoMdClose } from "react-icons/io";
 import { useState } from "react";
 import { MdArrowDropDown, MdOutlineArrowRight } from "react-icons/md";
-import { site, products } from "../server/api";
+import { products } from "../server/api";
 import {
   achievementLogos,
   achievementMobileView,
@@ -342,7 +342,7 @@ const Header = () => {
       ) : null}
 
       <nav className={navtailwindstyles}>
-        <Link href={site}>
+        <Link href="/">
           <Image src={Logo} alt="AHT FOODS" className={logo} />
         </Link>
 

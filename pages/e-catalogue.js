@@ -1,39 +1,40 @@
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import Image from "next/image";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Autoplay } from "swiper";
+import catalogue from "@/assets/catalogue";
+
 const Catalogue = () => {
+  const { one, two, three, four, five, seven, eight } = catalogue;
+  const arr = [one, two, three, four, five, seven, eight];
   return (
-    <div className="ml-6 md:ml-[25%] md:mt-36">
-      <div className="catalogueImgLoader"></div>
+    <div className="mt-6 md:mt-48 w-10/12 mx-auto">
+      <Swiper
+        modules={[Navigation, Pagination, Autoplay]}
+        slidesPerView={1}
+        navigation
+        autoplay={{ delay: 8500, disableOnInteraction: false }}
+        pagination={{ clickable: true }}
+        style={{ margin: "0 0 2rem 0" }}
+      >
+        {arr?.map((slide, index = 0) => (
+          <SwiperSlide key={`${index++}`}>
+            <div className="w-10/12 mx-auto">
 
-      <div className="catalogueContainer">
-        <h1 className="catalogueTitle text-gray-600">AHT FOOD'S CATALOGUE</h1>
-
-        <div className="catalogueBook">
-          <div className="catalogueBook-gap"></div>
-          <div className="catalogueBook-cataloguePages">
-            <div className="catalogueBook-cataloguePages-page"></div>
-            <div className="catalogueBook-cataloguePages-page"></div>
-            <div className="catalogueBook-cataloguePages-page"></div>
-            <div className="catalogueBook-cataloguePages-page"></div>
-            <div className="catalogueBook-cataloguePages-page"></div>
-            <div className="catalogueBook-cataloguePages-page"></div>
-          </div>
-          <div className="catalogueFlips">
-            <div className="catalogueFlip catalogueFlip1">
-              <div className="catalogueFlip catalogueFlip2">
-                <div className="catalogueFlip catalogueFlip3">
-                  <div className="catalogueFlip catalogueFlip4">
-                    <div className="catalogueFlip catalogueFlip5">
-                      <div className="catalogueFlip catalogueFlip6">
-                        <div className="catalogueFlip catalogueFlip7"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <Image
+              className="w-full"
+              src={slide}
+              alt="aht catalogue"
+              width={1200}
+              height={800}
+            />
             </div>
-          </div>
-        </div>
-      </div>
-      <div className="md:mb-[20%]"></div>
+
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </div>
   );
 };
