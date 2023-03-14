@@ -19,14 +19,14 @@ const SideNavigation = () => {
     ["Dried Onion", 22],
     ["Dried Orange", 8],
     ["Dried Peach", 11],
-    ["Pistachio", 1],
     ["Dried Pumpkin", 21],
     ["Dried Raisins", 14],
-    ["Saffron", 18],
     ["Dried Strawberry", 17],
     ["Dried Sultana", 24],
     ["Dried Tomato", 6],
     ["Dried Zucchini", 3],
+    ["Pistachio", 1],
+    ["Saffron", 18],
   ];
   return (
     <div
