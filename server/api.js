@@ -1,7 +1,7 @@
 export const site = `http://testaht.ir/`;
-export const URL = "nodejs-873lch.chbk.run";
-export const api = "nodejs-873lch.chbk.run/";
-export const path = `nodejs-873lch.chbk.run/files/`;
+export const URL = "https://nodejs-873lch.chbk.run";
+export const api = "https://nodejs-873lch.chbk.run/";
+export const path = `https://nodejs-873lch.chbk.run/files/`;
 export const category = "category";
 export const subcategory = "subcategory";
 export const products = "products";
