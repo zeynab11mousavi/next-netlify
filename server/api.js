@@ -1,7 +1,7 @@
-export const URL = "https://aht-back.chbk.run";
-export const api = "https://aht-back.chbk.run/";
+export const URL = "nodejs-873lch.chbk.run";
+export const api = "nodejs-873lch.chbk.run/";
 export const site = `http://testaht.ir/`;
-export const path = `https://aht-back.chbk.run/files/`;
+export const path = `nodejs-873lch.chbk.run/files/`;
 export const category = "category";
 export const subcategory = "subcategory";
 export const products = "products";

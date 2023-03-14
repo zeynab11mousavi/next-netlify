@@ -85,7 +85,8 @@ const Header = () => {
             <div
               id="PRODUCTS"
               onClick={() => setProduct(!product)}
-              className={navItemPhoneView}>
+              className={navItemPhoneView}
+            >
               PRODUCTS BULK/FOOD SERVICE
             </div>
             <button className={closeMenu} onClick={() => closeMenues()}>
@@ -96,29 +97,36 @@ const Header = () => {
           {product && (
             <div className=" shadow-inner">
               <Link
+                href={`/${products}/category/5&type=retail`}
+                className={productMobileView}
+              >
+                NUTS <MdOutlineArrowRight />
+              </Link>
+              <Link
                 href={`/${products}/category/1&type=retail`}
-                className={productMobileView}>
-                SUN-DRIED <MdOutlineArrowRight />
+                className={productMobileView}
+              >
+                SUN-DRIED FRUITS <MdOutlineArrowRight />
               </Link>
 
               <Link
                 href={`/${products}/category/2&type=retail`}
-                className={productMobileView}>
-                AIR-DRIED <MdOutlineArrowRight />
+                className={productMobileView}
+              >
+                AIR-DRIED FRUITS
+                <MdOutlineArrowRight />
               </Link>
               <Link
                 href={`/${products}/category/3&type=retail`}
-                className={productMobileView}>
-                FREEZE-DRIED <MdOutlineArrowRight />
-              </Link>
-              <Link
-                href={`/${products}/category/5&type=retail`}
-                className={productMobileView}>
-                NUTS <MdOutlineArrowRight />
+                className={productMobileView}
+              >
+                FREEZE-DRIED FRUITS & VEG
+                <MdOutlineArrowRight />
               </Link>
               <Link
                 href={`/${products}/category/6&type=retail`}
-                className={productMobileView}>
+                className={productMobileView}
+              >
                 SAFFRON <MdOutlineArrowRight />
               </Link>
             </div>
@@ -134,29 +142,35 @@ const Header = () => {
           {bulk && (
             <div className="shadow-inner">
               <Link
+                href={`/${products}/category/5&type=bulk`}
+                className={productMobileView}
+              >
+                NUTS <MdOutlineArrowRight />
+              </Link>
+              <Link
                 href={`/${products}/category/1&type=bulk`}
-                className={productMobileView}>
-                SUN-DRIED <MdOutlineArrowRight />
+                className={productMobileView}
+              >
+                SUN-DRIED FRUITS <MdOutlineArrowRight />
               </Link>
 
               <Link
                 href={`/${products}/category/2&type=bulk`}
-                className={productMobileView}>
-                AIR-DRIED <MdOutlineArrowRight />
+                className={productMobileView}
+              >
+                AIR-DRIED FRUITS <MdOutlineArrowRight />
               </Link>
               <Link
                 href={`/${products}/category/3&type=bulk`}
-                className={productMobileView}>
-                FREEZE-DRIED <MdOutlineArrowRight />
-              </Link>
-              <Link
-                href={`/${products}/category/5&type=bulk`}
-                className={productMobileView}>
-                NUTS <MdOutlineArrowRight />
+                className={productMobileView}
+              >
+                FREEZE-DRIED FRUITS & VEG
+                <MdOutlineArrowRight />
               </Link>
               <Link
                 href={`/${products}/category/6&type=bulk`}
-                className={productMobileView}>
+                className={productMobileView}
+              >
                 SAFFRON <MdOutlineArrowRight />
               </Link>
             </div>
@@ -165,7 +179,8 @@ const Header = () => {
           <div className={navItemListPhoneView}>
             <div
               onClick={() => setAchievement(!achievement)}
-              className={navItemPhoneView}>
+              className={navItemPhoneView}
+            >
               ACHIEVEMENTS
             </div>
           </div>
@@ -278,7 +293,8 @@ const Header = () => {
           <div className={navItemListPhoneView}>
             <div
               onClick={() => setNews(!newsState)}
-              className={navItemPhoneView}>
+              className={navItemPhoneView}
+            >
               NEWS AND EVENTS
             </div>
           </div>
@@ -297,7 +313,10 @@ const Header = () => {
           )}
 
           <div className={navItemListPhoneView}>
-            <div onClick={() => setAbout(!aboutState)} className={navItemPhoneView}>
+            <div
+              onClick={() => setAbout(!aboutState)}
+              className={navItemPhoneView}
+            >
               ABOUT US
             </div>
           </div>
@@ -317,17 +336,13 @@ const Header = () => {
                 FACTORIES
               </a>
 
-              <a
-                href={`/quality-food-safety`}
-                className={productMobileView}>
+              <a href={`/quality-food-safety`} className={productMobileView}>
                 QUALITY AND FOOD SAFETY
               </a>
               <a href={`/custom-packing`} className={productMobileView}>
                 CUSTOM PACKING
               </a>
-              <a
-                href={`/research-development`}
-                className={productMobileView}>
+              <a href={`/research-development`} className={productMobileView}>
                 R & D
               </a>
               <a href={`/FAQ`} className={productMobileView}>
@@ -353,34 +368,46 @@ const Header = () => {
               <div className={flexCenter}>
                 <div className={deskViewNavItems}>
                   {" "}
-                  PRODUCTS <span > <MdArrowDropDown/> </span>
+                  PRODUCTS{" "}
+                  <span>
+                    {" "}
+                    <MdArrowDropDown />{" "}
+                  </span>
                 </div>
                 <div className="text-xs">BULK/FOOD SERVICE</div>
               </div>
               <div className={navItemListSubList}>
                 <Link
-                  href={`/${products}/category/1&type=bulk`}
-                  className={productStyle}>
-                  SUN-DRIED <MdOutlineArrowRight />
-                </Link>
-                <Link
-                  href={`/${products}/category/2&type=bulk`}
-                  className={productStyle}>
-                  AIR-DRIED <MdOutlineArrowRight />
-                </Link>
-                <Link
-                  href={`/${products}/category/3&type=bulk`}
-                  className={productStyle}>
-                  FREEZE-DRIED <MdOutlineArrowRight />
-                </Link>
-                <Link
                   href={`/${products}/category/5&type=bulk`}
-                  className={productStyle}>
+                  className={productStyle}
+                >
                   NUTS <MdOutlineArrowRight />
                 </Link>
                 <Link
+                  href={`/${products}/category/1&type=bulk`}
+                  className={productStyle}
+                >
+                  SUN-DRIED FRUITS FRUITS
+                  <MdOutlineArrowRight />
+                </Link>
+                <Link
+                  href={`/${products}/category/2&type=bulk`}
+                  className={productStyle}
+                >
+                  AIR-DRIED FRUITS
+                  <MdOutlineArrowRight />
+                </Link>
+                <Link
+                  href={`/${products}/category/3&type=bulk`}
+                  className={productStyle}
+                >
+                  FREEZE-DRIED FRUITS & VEG
+                  <MdOutlineArrowRight />
+                </Link>
+                <Link
                   href={`/${products}/category/6&type=bulk`}
-                  className={productStyle}>
+                  className={productStyle}
+                >
                   SAFFRON <MdOutlineArrowRight />
                 </Link>
               </div>
@@ -390,34 +417,46 @@ const Header = () => {
               <div className={flexCenter}>
                 <div className={deskViewNavItems}>
                   {" "}
-                  PRODUCTS <span > <MdArrowDropDown/> </span>
+                  PRODUCTS{" "}
+                  <span>
+                    {" "}
+                    <MdArrowDropDown />{" "}
+                  </span>
                 </div>
                 <div className="text-xs">PRIVATE LABEL</div>
               </div>
               <div className={navItemListSubList}>
                 <Link
-                  href={`/${products}/category/1&type=retail`}
-                  className={productStyle}>
-                  SUN-DRIED <MdOutlineArrowRight />
-                </Link>
-                <Link
-                  href={`/${products}/category/2&type=retail`}
-                  className={productStyle}>
-                  AIR-DRIED <MdOutlineArrowRight />
-                </Link>
-                <Link
-                  href={`/${products}/category/3&type=retail`}
-                  className={productStyle}>
-                  FREEZE-DRIED <MdOutlineArrowRight />
-                </Link>
-                <Link
                   href={`/${products}/category/5&type=retail`}
-                  className={productStyle}>
+                  className={productStyle}
+                >
                   NUTS <MdOutlineArrowRight />
                 </Link>
                 <Link
+                  href={`/${products}/category/1&type=retail`}
+                  className={productStyle}
+                >
+                  SUN-DRIED FRUITS <MdOutlineArrowRight />
+                </Link>
+                <Link
+                  href={`/${products}/category/2&type=retail`}
+                  className={productStyle}
+                >
+                  AIR-DRIED FRUITS
+                  <MdOutlineArrowRight />
+                </Link>
+                <Link
+                  href={`/${products}/category/3&type=retail`}
+                  className={productStyle}
+                >
+                  FREEZE-DRIED FRUITS & VEG
+                  <MdOutlineArrowRight />
+                </Link>
+
+                <Link
                   href={`/${products}/category/6&type=retail`}
-                  className={productStyle}>
+                  className={productStyle}
+                >
                   SAFFRON <MdOutlineArrowRight />
                 </Link>
               </div>
@@ -425,7 +464,11 @@ const Header = () => {
 
             <div className="m-2.5 group relative cursor-pointer  ">
               <div className={deskViewNavItems}>
-                ACHIEVEMENTS <span > <MdArrowDropDown/> </span>
+                ACHIEVEMENTS{" "}
+                <span>
+                  {" "}
+                  <MdArrowDropDown />{" "}
+                </span>
               </div>
               <div className={achievementSubList}>
                 <Link href="#" className={achievementStyle}>
@@ -501,7 +544,11 @@ const Header = () => {
 
             <div className={navbarItemHover}>
               <div className={deskViewNavItems}>
-                BRANDS <span > <MdArrowDropDown/> </span>
+                BRANDS{" "}
+                <span>
+                  {" "}
+                  <MdArrowDropDown />{" "}
+                </span>
               </div>
               <div className={brandsEventSubList}>
                 <Link href={`#`} className={brandMobileView}>
@@ -525,7 +572,11 @@ const Header = () => {
 
             <div className={navbarItemHover}>
               <div className={deskViewNavItems}>
-                EVENTS & NEWS <span > <MdArrowDropDown/> </span>
+                EVENTS & NEWS{" "}
+                <span>
+                  {" "}
+                  <MdArrowDropDown />{" "}
+                </span>
               </div>
               <div className={brandsEventSubList}>
                 <Link href={`/event-news`} className={productStyle}>
@@ -540,7 +591,11 @@ const Header = () => {
 
             <div className={navbarItemHover}>
               <div className={deskViewNavItems}>
-                ABOUT US <span > <MdArrowDropDown/> </span>
+                ABOUT US{" "}
+                <span>
+                  {" "}
+                  <MdArrowDropDown />{" "}
+                </span>
               </div>
               <div className={navItemListSubList}>
                 <Link className={productStyle} href={`/about`}>
@@ -555,17 +610,13 @@ const Header = () => {
                   FACTORIES
                 </Link>
 
-                <Link
-                  className={productStyle}
-                  href={`/quality-food-safety`}>
+                <Link className={productStyle} href={`/quality-food-safety`}>
                   QUALITY AND FOOD SAFETY
                 </Link>
                 <Link className={productStyle} href={`/custom-packing`}>
                   CUSTOM PACKING
                 </Link>
-                <Link
-                  className={productStyle}
-                  href={`/research-development`}>
+                <Link className={productStyle} href={`/research-development`}>
                   R & D
                 </Link>
                 <Link className={productStyle} href={`/FAQ`}>
@@ -584,7 +635,7 @@ const Header = () => {
               <BiSearchAlt2 onClick={() => handleSearch()} />
             </div>
             <input
-            id="header-search-input"
+              id="header-search-input"
               value={search}
               onChange={(e) => setSearch(e.target.value)}
               className={searchInputDesk}
@@ -606,7 +657,8 @@ const Header = () => {
             </Link>
             <Link
               href="https://api.whatsapp.com/send/?phone=989123865564&text&type=phone_number&app_absent=0"
-              target="_blank">
+              target="_blank"
+            >
               <FaWhatsapp className={navItemPhoneView} />
             </Link>
             <Link href="mailto:info@ahtfoods.com? subject= subject text">
