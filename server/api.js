@@ -1,7 +1,7 @@
-export const site = `http://ahtfoods.com/`;
-export const URL = "http://localhost:3001";
-export const api = "http://localhost:3001/";
-export const path = `http://localhost:3001/files/`;
+export const URL = 'https://nodejs-873lch.chbk.run'
+export const api = 'https://nodejs-873lch.chbk.run/';
+export const path = `https://nodejs-873lch.chbk.run/files/`;
+export const site = 'https://ahtfoods.com/';
 export const category = "category";
 export const subcategory = "subcategory";
 export const products = "products";
