@@ -18,7 +18,7 @@ import YouMayLike from "@/components/YouMayLike";
 export const getStaticProps = async () => {
   // FETCH POPULAR PRODUCTS
   const res = await fetch(
-    `${api}${products}?${category}=3&type=retail&_limit=6`
+    `${api}${products}?_page=1&_limit=6`
   );
   const data = await res.json();
 
