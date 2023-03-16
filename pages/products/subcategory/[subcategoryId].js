@@ -21,12 +21,12 @@ const Subcategory = () => {
     subcat
   );
 
-  const myTimeout = setTimeout(myGreeting, 15000);
+  // const myTimeout = setTimeout(myGreeting, 15000);
 
-  function myGreeting() {
-    document.getElementById("noDataMessageContainer").innerHTML ="please refresh, if it didn't work check your connection";
-    document.getElementById("loadingAnime").classList.remove("lds-spinner");
-  }
+  // function myGreeting() {
+  //   document.getElementById("noDataMessageContainer").innerHTML ="please refresh, if it didn't work check your connection";
+  //   document.getElementById("loadingAnime").classList.remove("lds-spinner");
+  // }
 
   return (
     <div className="flex w-full justify-evenly items-start p-8  md:mt-48">
@@ -54,7 +54,7 @@ const Subcategory = () => {
               <div></div>
               <div></div>
             </div>
-            <div id="noDataMessageContainer">{() => myTimeout()}</div>
+            {/* <div id="noDataMessageContainer">{() => myTimeout()}</div> */}
           </div>
         )}
       </div>

@@ -16,12 +16,12 @@ const Category = () => {
     );
   }, [categoryId, cat]);
 
-  const myTimeout = setTimeout(myGreeting, 15000);
+  // const myTimeout = setTimeout(myGreeting, 15000);
 
-  function myGreeting() {
-    document.getElementById("noDataMessageContainer").innerHTML="please refresh, if it didn't work check your connection";
-    document.getElementById("loadingAnime").classList.remove("lds-spinner");
-  }
+  // function myGreeting() {
+  //   document.getElementById("noDataMessageContainer").innerHTML="please refresh, if it didn't work check your connection";
+  //   document.getElementById("loadingAnime").classList.remove("lds-spinner");
+  // }
 
   return (
     <div className="flex w-full justify-between  md:justify-evenly items-start md:p-8 md:mt-36 ">
@@ -49,10 +49,9 @@ const Category = () => {
               <div></div>
               <div></div>
             </div>
-            <div id="noDataMessageContainer">{() => setTimeout()}</div>
+            {/* <div id="noDataMessageContainer">{() => setTimeout()}</div> */}
           </div>
         )}
-        {/* </div> */}
       </div>
     </div>
   );
