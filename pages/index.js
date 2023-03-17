@@ -110,7 +110,7 @@ const Home = ({ /*popular ,*/ news, events }) => {
         className="w-full lg:p-8 block md:flex justify-around">
         {/* NEWSLETTERS */}
         <div className=" w-full md:w-8/12 mx-auto md:mx-[0]">
-          <div className="text-xl font-semibold md:text-[38px] text-[#7D2F2F] mb-4 ml-4">
+          <div className="text-xl font-semibold md:text-2xl text-[#7D2F2F] mb-4 ml-4">
             {" "}
             NEWS
           </div>
@@ -145,7 +145,7 @@ const Home = ({ /*popular ,*/ news, events }) => {
 
         {/* EVENTS */}
         <div id="events" className="w-full mx-auto md:w-3/12 mt-8 md:mt-0 ">
-          <div className=" text-xl font-semibold md:text[32px] text-[#7D2F2F] mb-0 m-4">
+          <div className=" text-xl font-semibold md:text-2xl text-[#7D2F2F] mb-0 m-4">
             {" "}
             UPCOMING EVENTS
           </div>
@@ -174,7 +174,7 @@ const Home = ({ /*popular ,*/ news, events }) => {
       </div>
 
       {/* POPULAR PRODUCTS  */}
-      <p className="text-xl font-semibold md:text-[38px] text-[#660100] m-4">POPULAR</p>
+      <p className="text-xl font-semibold md:text-2xl text-[#660100] m-4">POPULAR</p>
       {/* <YouMayLike /> */}
       <div id="popularWrapper" className="w-full md:p-8 ">
         <YouMayLike />
