@@ -30,3 +30,4 @@ export const searchIconMScreen= "text-white text-2xl mr-1 w-full flex justify-en
 export const socialMediaWrapper= "text-white hidden md:w-2/12 md:flex justify-evenly md:text-2xl lg:text-4xl "
 export const burgerMenu = " block text-white text-xl md:hidden cursor-pointer"
 export const flexCenter = "flex-col items-center"
+//
