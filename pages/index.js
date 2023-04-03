@@ -46,8 +46,8 @@ const Home = ({ /*popular ,*/ news, events }) => {
     desktopSlider.PistaD,
     desktopSlider.SaffronD,
     desktopSlider.FigsD,
-    desktopSlider.AHTD,
     desktopSlider.DatePowderD,
+    desktopSlider.AHTD,
     desktopSlider.RaisinsD,
   ];
 
