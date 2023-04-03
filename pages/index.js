@@ -42,9 +42,13 @@ export const getStaticProps = async () => {
 
 const Home = ({ /*popular ,*/ news, events }) => {
   const deskSlid = [
+    desktopSlider.DatesD,
     desktopSlider.PistaD,
+    desktopSlider.SaffronD,
     desktopSlider.FigsD,
-    desktopSlider.AHTD
+    desktopSlider.AHTD,
+    desktopSlider.DatePowderD,
+    desktopSlider.RaisinsD,
   ];
 
   return (
